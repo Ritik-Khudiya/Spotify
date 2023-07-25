@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <title>Spotify -Favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+           <img class="brand" src="logo.png" alt="">
+        </div>
+        <ul class="navul">
+             <li>Spotify</li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="menubar">
+            <i class="fa-solid fa-bars open" id="open-outline"></i>
+            <i class="fa-solid fa-rectangle-xmark " id="close-outline"></i>
+        </div>
+       
+    </nav>
+     <div class="container">
+      
+          <div class="songList">
+            <h1 class="title">Best songs</h1>
+             <div class ="songItemContainer">
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">4:24 <i id="0" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem" class="jai">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">4:15 <i id="1" class=" far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">3:19 <i id="2" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">3:01<i id="3" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">3:20 <i id="4"  class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">3:07 <i id="5" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="7">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">3:00 <i id="6" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">3:24 <i id="7"  class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">2:30 <i id="8"  class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">3:28 <i id="9" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">2:48<i id="10" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="coverpage1.jpg" alt="1">
+                    <span class="songName">Parindey</span>
+                    <span class="songlistplay"><span class="timestamp">2:38<i id="11" class="far songItemPlay fa-sharp fa-solid fa-circle-play" style="color: #df0ccd;"></i></span></span>
+                </div>
+                
+            
+        </div> 
+    </div> 
+          <div class="songBanner">
+            <img src="android-chrome-192x192.png" alt="1" id="img1"> 
+        </div> 
+    </div>
+
+     <div class="bottomline">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            
+            <i  class="fa-solid fa-backward fa-2xl" id="previous" style="color: #f906d8;"></i>
+            <i class="fa-sharp fa-solid fa-circle-play fa-2xl" id="masterPlay" style="color: #df0ccd;"></i>
+            <i  class="fa-solid fa-forward fa-2xl"  id="next" style="color: #e91ce2;"></i>
+    
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="50px" id="gif" >
+            <span id="changeName">Music doesn't lie</span>
+            
+        </div>
+        <span id="time">00:00</span>
+       
+    </div>  
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <script src="https://kit.fontawesome.com/1670049db6.js" crossorigin="anonymous"></script>
+</body>
+</html>
