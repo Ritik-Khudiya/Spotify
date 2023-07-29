@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap");
+ body {
+   background-image: url("bg1.gif");
+   min-height: 100vh;
+  background-size: cover;
+      background-attachment: fixed;
+    overflow-x: hidden;
+    
+} 
+html{
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+  width: 0px;
+  margin: 0px;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+ 
+}
+
+.navbar{
+  width: 100vw;
+  display: flex;
+  border: 1px solid red;
+  height: 55px;
+  background-color:#3d3434;
+  color: white;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+}
+.menubar{
+  margin-left: auto;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.brand{
+  width: 57px;
+  height: 55px;
+}
+.navul{
+  display: flex;
+  width: 85vw;
+
+}
+.navul li{
+  padding: 0px 30px;
+  margin: 0px;
+  font-size: 22px;
+ 
+}
+.navul li a{
+  text-decoration: none;
+  color: white;
+}
+.navul li:first-child{
+  padding-left: 0px;
+}
+
+.container{
+  width: 70%;
+  height: 65vh;
+  margin:0px auto;
+  margin-top: 100px;
+  border-radius: 13px;
+  border: 2px solid #eee;
+  background-image:url("bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-color: rgb(30, 141, 28);
+}
+.songList{
+  width: 50%;
+  height: 92%;
+}
+.title{
+  color: white;
+  margin-left: 5px;
+  
+}
+
+.songBanner{
+  width: 40%;
+  
+}
+.songItem{
+  height: 35px;
+  width: 77%;
+  background-color:white;
+  border-radius: 17px;
+  display: flex;
+  margin: 3px 0px;
+  border: 1px solid black;
+  margin-left: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.songItem:hover{
+  cursor: pointer;
+}
+.songItemContainer::-webkit-scrollbar{
+  width: 0px;
+}
+.songItemPlay{
+  cursor: pointer;
+}
+.songItem img{
+  height:100%;
+  width: 40px;
+  border-radius: 18px;
+  padding-left: 2px;
+}
+.songItemContainer{
+  overflow-y: scroll;
+    height: 80%;
+    margin-top: 38px;
+}
+.songlistplay
+{
+  padding-right: 10px;
+}
+.bottomline{
+  background-color:black;
+  position:fixed;
+  bottom:0px;
+  margin-top: 10px;
+  color:white;
+  height: 110px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#myProgressBar{
+  width: 80vw; 
+  cursor: pointer;
+  margin-top: -40px;
+}
+
+.icons{
+  margin-top: 14px; 
+  
+}
+.icons i{
+  cursor: pointer;
+}
+
+#time{
+  margin-left: 77vw;
+  position: absolute;
+  top:46px;
+}
+.songInfo{
+  width: 32vw;
+  display: flex;
+  gap: 10px;
+  margin-right:  48vw;
+  position: absolute;
+  top: 46px;
+  flex-wrap: wrap;
+}
+.songBanner img{
+    width: 55%;
+    border-radius: 60px;
+    margin-top: 80px;
+    
+}
+.songBanner img:hover{
+  transform:scale(1.2)
+}
+.menubar{
+    display:none;  
+  cursor: pointer;
+  background: transparent;
+}
+#close-outline{
+  display: none;
+}
+@media only screen  and (max-width:1065px)
+{
+  .container{
+    width: 80%;
+  }
+  .songBanner img {
+    width: 80%;
+    border-radius: 47px;
+}
+.songList{
+  width: 70%;
+}
+}
+@media only screen  and (max-width:800px)
+{
+
+  .songItem{
+    height: 75px;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin: 12px 0px;
+  }
+  .songItem::-webkit-scrollbar{
+    width: 0px;
+  }
+  .songName{
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 5px;
+  }
+
+}
+@media only screen and (max-width:580px)
+{
+
+
+     .songInfo{
+      flex-direction: column;
+     }
+     #time{
+      margin-right: 30px;
+     }
+    .menubar{
+      margin-right: 10px;
+      display: block;
+      z-index: 5; 
+      color:white;
+    }
+   .bottomline{
+      z-index: 0;
+    }
+    .bottomline2{
+      z-index: -1;
+    }
+    .songItem{
+      margin: 12px 0px;
+    }
+    .navul{
+  
+      width: 100%;
+      min-height: 100vh;
+      color: #3d3434;
+      background-color: #e7f5ff;
+      position: absolute;
+      top:0px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 70px;
+      transform: translateX(100%); 
+      transition: all 0.0s linear;
+      opacity: 0;
+    }
+    .navul li{
+      padding: 0px;
+     font-size: 32px;
+
+    }
+    .active .navul{
+      
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    .active .navul li a{
+      color: #3d3434;
+    }
+    .active  #open-outline{
+      display:none;
+    }
+    .active #close-outline{
+      display: block;
+      color: #3d3434;
+    }
+    .songBanner img{
+      border-radius: 10px;
+    }
+    
+}
+@media only screen and (max-width:280px)
+{
+  .songList{
+    height: 84%;
+  }
+}
